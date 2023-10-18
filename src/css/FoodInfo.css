@@ -1,0 +1,120 @@
+@media (max-width: 768px) {
+    .foodmain {
+
+        background-color: #F9F2DD;
+        display: flex;
+
+        align-items: center;
+
+        flex-direction: column;
+
+        min-height: 100vh;
+
+
+    }
+
+    .foodrectangle {
+        border: 1px solid;
+        border-color: #c28428;
+        border-radius: 7px;
+        height: 34px;
+
+        width: 313px;
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: -30px;
+
+    }
+
+    .foodtext-wrapper {
+        color: #c28428;
+        font-family: "Nunito-Regular", Helvetica;
+        font-size: 13px;
+        font-weight: 400;
+
+        letter-spacing: 5.07px;
+        line-height: normal;
+        text-align: center;
+        margin-top: 9px;
+        display: inline-block;
+
+
+
+    }
+
+
+
+    .foodcontainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+
+    .foodgrid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
+        border: 1px solid rgb(220, 189, 189);
+        padding: 10px;
+        border-radius: 10px;
+        max-width: 300px;
+        text-align: center;
+        box-shadow: 0 2px 4px #c28428;
+    }
+
+    .newfoodgrid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 280px;
+        height: auto;
+        margin-top: 10px;
+        border-bottom: 1px solid #ccc;
+
+    }
+
+    .foodgrid img {
+        width: 280px;
+        height: auto;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+
+    .food-title {
+        font-size: 18px;
+        font-weight: 500;
+        margin: 10px 0;
+        font-family: "Nunito-Regular", Helvetica;
+        text-transform: uppercase;
+        letter-spacing: 1.44px;
+        line-height: normal;
+        color: #c28428;
+        width: 202px;
+    }
+
+    .food-descrip {
+        font-size: 14px;
+        color: #777;
+        margin: 10px 0;
+        font-family: "Nunito-Regular", Helvetica;
+    }
+
+    .price {
+        font-size: 16px;
+        font-weight: 600;
+        color: #5d5d5d;
+        margin-top: 10px;
+    }
+
+
+
+
+
+
+
+
+}
