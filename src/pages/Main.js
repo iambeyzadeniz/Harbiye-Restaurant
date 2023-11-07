@@ -1,18 +1,33 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import "../css/Main.css";
 import Logo from "../assets/Logo.png";
 import Yemek from "../assets/yemek.png";
 import Menu from "../pages/Menu";
 import { Link } from 'react-router-dom';
+import axios from 'axios';
 
 
 function Main(props) {
+    const [firmInfo, setFirmInfo] = useState([]);
+    useEffect(() => {
+        axios.get(`http://qrandmenu.xyz/api/Firm/firm-list?userId=1`)
+            .then((response) => {
+                setFirmInfo(response.data.data);
+
+            })
+
+            .catch((error) => {
+                console.error('API veri çekme hatası:', error);
+            });
+    }, []);
+    console.log(firmInfo);
     return (
 
         <div className="iphone-pro-max">
 
-
-            <img className="harbiyerestaurant" src={Logo} />
+            {firmInfo.map((infos) => (
+                <img className="harbiyerestaurant" src={`http://portal.qrandmenu.com${infos.firmLogo}`} />
+            ))}
             <div className='rectangles'>
                 <div className='recandleft'>
 

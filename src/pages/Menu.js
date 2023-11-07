@@ -10,7 +10,7 @@ import axios from 'axios';
 export default function Menu() {
 
     const [categories, setCategories] = useState([]);
-    const kategoriUrl = 'http://qrandmenu.xyz/api/Category/category-list?firmId=1&branchId=1';
+    const kategoriUrl = 'http://qrandmenu.xyz/api/Category/category-list?branchId=1';
     useEffect(() => {
         axios.get(kategoriUrl)
             .then((response) => {

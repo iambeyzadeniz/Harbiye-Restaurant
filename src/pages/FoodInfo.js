@@ -41,7 +41,7 @@ function FoodInfo() {
 
             <div className="foodrectangle" >
                 {products.slice(-1).map((product) => (
-                    <div className="foodtext-wrapper">{product.categoryName}</div>
+                    <div className="foodtext-wrapper">{product.category.categoryName}</div>
                 ))}
 
             </div>
