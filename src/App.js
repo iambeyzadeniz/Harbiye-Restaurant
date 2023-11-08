@@ -12,6 +12,7 @@ function App() {
         <Route path='/' index element={<Main />} />
         <Route path="/kategoriler" element={<Menu />} />
         <Route path='/kategoriler/:categoryId' element={<FoodInfo />} />
+
       </Routes>
     </HashRouter>
   );
